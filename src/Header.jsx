@@ -73,7 +73,7 @@ const Header = () => {
       }`}>
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="flex items-center gap-3 group cursor-pointer relative z-[10001]">
-            <div className="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center font-black text-xl shadow-lg">C</div>
+            <div className="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center font-black text-xl shadow-lg">M</div>
             <h1 className="text-xl md:text-2xl font-black tracking-tighter uppercase italic text-white">Mer<span className="text-blue-500">nly</span></h1>
           </div>
           

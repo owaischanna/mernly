@@ -36,9 +36,11 @@ const Footer = () => {
           <div className="space-y-6">
             <h4 className="text-xs font-black uppercase tracking-[0.3em] text-slate-300">Solutions</h4>
             <ul className="space-y-4 text-slate-500 text-sm">
-              <li className="hover:text-blue-500 transition-colors cursor-pointer">SaaS Development</li>
-              <li className="hover:text-blue-500 transition-colors cursor-pointer">AI Integrations</li>
+              <li className="hover:text-blue-500 transition-colors cursor-pointer">SaaS.MVPs Development</li>
+              <li className="hover:text-blue-500 transition-colors cursor-pointer"> Integrations and Deployment</li>
               <li className="hover:text-blue-500 transition-colors cursor-pointer">Enterprise Apps</li>
+               <li className="hover:text-blue-500 transition-colors cursor-pointer">Healthcare Apps</li>
+                <li className="hover:text-blue-500 transition-colors cursor-pointer">Custom Software Development</li>
             </ul>
           </div>
 
