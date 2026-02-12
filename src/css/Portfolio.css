@@ -1,0 +1,66 @@
+.portfolio {
+  background-color: #2c2c2c;
+  color: #fff;
+  padding: 4rem 2rem;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.portfolio-title {
+  font-size: 2.8rem;
+  color: #f39c12;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.portfolio-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.portfolio-image {
+  max-width: 800px; /* Increased size for the image */
+  text-align: center;
+}
+
+.portfolio-image img {
+  width: 100%; /* Image will take full width of the container */
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  max-height: 500px; /* Control maximum height */
+  object-fit: cover; /* Ensure aspect ratio is maintained */
+}
+
+.portfolio-image p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+/* Simple styles for slider buttons */
+.slider-button {
+  background-color: #f39c12; /* Button background color */
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1rem; /* Adjust padding for better button size */
+  cursor: pointer;
+  font-size: 1.5rem;
+  border-radius: 5px; /* Slightly rounded corners */
+  transition: background-color 0.3s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.slider-button:hover {
+  background-color: #e67e22; /* Darker shade on hover */
+}
+
+/* Add specific classes for previous and next buttons */
+.prev-button {
+  margin-right: 1rem; /* Space between previous button and slider */
+}
+
+.next-button {
+  margin-left: 1rem; /* Space between next button and slider */
+}

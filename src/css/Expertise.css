@@ -1,0 +1,404 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap");
+
+.expertise {
+  background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
+  color: #fff;
+  padding: 4rem 2rem;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.expertise-title {
+  font-size: 2.8rem;
+  color: #f39c12;
+  margin-bottom: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: "Montserrat", sans-serif;
+}
+
+.expertise-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap; /* Allow cards to wrap to the next line */
+}
+
+.expertise-card {
+  background: #1a1a1a;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 300px; /* Fixed width for larger screens */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.4s ease, box-shadow 0.4s ease,
+    background-color 0.4s ease;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.expertise-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+  background-color: #333;
+}
+
+.expertise-icon {
+  font-size: 3rem;
+  color: #f39c12;
+  margin: 1rem auto; /* Center the icon */
+  transition: transform 0.6s ease;
+}
+
+.expertise-card:hover .expertise-icon {
+  transform: rotate(360deg) scale(1.1);
+}
+
+.expertise-card h3 {
+  font-size: 1.8rem;
+  color: #f39c12;
+  margin-top: 0.5rem;
+  margin-bottom: 0.8rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.expertise-card p {
+  color: #ccc;
+  font-size: 1rem;
+  line-height: 1.6; /* Increased line height for better readability */
+  margin-bottom: 0;
+}
+
+.expertise-stats {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap; /* Allow stats to wrap to the next line */
+  margin-top: 2rem;
+}
+
+.stat {
+  background: #1a1a1a;
+  padding: 2rem; /* Increased padding for better spacing */
+  border-radius: 12px;
+  width: 200px; /* Fixed width for larger screens */
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.stat:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.4);
+  background-color: #333;
+}
+
+.stat-icon {
+  font-size: 3rem; /* Increased icon size */
+  color: #f39c12;
+  margin: 0 auto; /* Center the icon */
+  animation: rotate 1s forwards; /* Change to rotation animation */
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.stat h4 {
+  font-size: 1.8rem;
+  color: #f39c12;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.stat p {
+  color: #ccc;
+  font-size: 1rem;
+}
+/* Add this media query */
+@media (max-width: 1024px) {
+  .expertise {
+    padding: 3rem 1rem; /* Adjust padding for smaller screens */
+  }
+
+  .expertise-title {
+    font-size: 2.5rem; /* Reduce title size */
+  }
+
+  .expertise-cards {
+    gap: 1rem; /* Reduce gap between cards */
+  }
+
+  .expertise-card {
+    width: 90%; /* Use more width on small screens */
+    margin: 0 auto; /* Center cards */
+  }
+
+  .expertise-stats {
+    gap: 1rem; /* Reduce gap between stats */
+  }
+
+  .stat {
+    width: 100%; /* Full width for stats */
+    padding: 1rem; /* Adjust padding */
+  }
+
+  .stat h4 {
+    font-size: 1.5rem; /* Reduce stat title size */
+  }
+}
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap");
+
+.expertise {
+  background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
+  color: #fff;
+  padding: 4rem 2rem;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.expertise-title {
+  font-size: 2.8rem;
+  color: #f39c12;
+  margin-bottom: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: "Montserrat", sans-serif;
+}
+
+.expertise-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.expertise-card {
+  background: #1a1a1a;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 300px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.4s ease, box-shadow 0.4s ease,
+    background-color 0.4s ease;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.expertise-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+  background-color: #333;
+}
+
+.expertise-icon {
+  font-size: 3rem;
+  color: #f39c12;
+  margin: 1rem auto; 
+  transition: transform 0.6s ease;
+}
+
+.expertise-card:hover .expertise-icon {
+  transform: rotate(360deg) scale(1.1);
+}
+
+.expertise-card h3 {
+  font-size: 1.8rem;
+  color: #f39c12;
+  margin-top: 0.5rem;
+  margin-bottom: 0.8rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.expertise-card p {
+  color: #ccc;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.expertise-stats {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.stat {
+  background: #1a1a1a;
+  padding: 2rem; 
+  border-radius: 12px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.stat:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.4);
+  background-color: #333;
+}
+
+.stat-icon {
+  font-size: 3rem; 
+  color: #f39c12;
+  margin: 0 auto; 
+  animation: rotate 1s forwards; 
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.stat h4 {
+  font-size: 1.8rem;
+  color: #f39c12;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.stat p {
+  color: #ccc;
+  font-size: 1rem;
+} */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap');
+
+.expertise {
+  background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
+  color: #fff;
+  padding: 4rem 2rem;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.expertise-title {
+  font-size: 2.8rem;
+  color: #f39c12;
+  margin-bottom: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: "Montserrat", sans-serif;
+}
+
+.expertise-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.expertise-card {
+  background: #1a1a1a;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 300px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.expertise-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+  background-color: #333;
+}
+
+.expertise-icon {
+  font-size: 3rem;
+  color: #f39c12;
+  margin: 1rem auto;
+  transition: transform 0.6s ease;
+}
+
+.expertise-card:hover .expertise-icon {
+  transform: rotate(360deg) scale(1.1);
+}
+
+.expertise-card h3 {
+  font-size: 1.8rem;
+  color: #f39c12;
+  margin-top: 0.5rem;
+  margin-bottom: 0.8rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.expertise-card p {
+  color: #ccc;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.expertise-stats {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.stat {
+  background: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 12px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.stat:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.4);
+  background-color: #333;
+}
+
+.stat-icon {
+  font-size: 2.5rem;
+  color: #f39c12;
+  margin-bottom: 0.5rem;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.stat h4 {
+  font-size: 1.8rem;
+  color: #f39c12;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.stat p {
+  color: #ccc;
+  font-size: 1rem;
+} */

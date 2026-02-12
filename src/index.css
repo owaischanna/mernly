@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.google.com/share?selection.family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Plus+Jakarta+Sans', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #020617; /* Deepest Slate */
+  color: #f8fafc;
+  overflow-x: hidden;
+}
+
+/* Custom Animation Classes */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-reveal {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
