@@ -24,7 +24,7 @@ function App() {
       <Portfolio></Portfolio>
       <Process></Process>
       <Reviews></Reviews>
-      <Team></Team>
+      
       <ContactForm></ContactForm>
       <Footer></Footer>
     </>
